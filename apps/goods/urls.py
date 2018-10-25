@@ -1,1 +1,1 @@
-from django.conf.urls import urlfrom apps.user import viewsfrom apps.user.views import RegisterView, ActiveView, LoginViewurlpatterns = []
+from django.conf.urls import urlfrom goods import viewsapp_name = 'goods'urlpatterns = [    url(r'^$', views.index, name='index'), # 首页]
