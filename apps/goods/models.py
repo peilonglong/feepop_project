@@ -30,7 +30,7 @@ class GoodsSKU(BaseModel):
     name = models.CharField(max_length=20, verbose_name='商品名称')
     desc = models.CharField(max_length=256, verbose_name='商品简介')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品价格')
-    country = models.CharField(max_length=20, verbose_name='商品所属国家')
+    country = models.CharField(max_length=20, verbose_name='所属国家')
     image = models.ImageField(upload_to='goods', verbose_name='商品图片')
     stock = models.IntegerField(default=1, verbose_name='商品库存')
     sales = models.IntegerField(default=0, verbose_name='商品销量')
