@@ -146,7 +146,7 @@ TINYMCE_DEFAULT_CONFIG = {
 }
 
 
-# 发送邮件配置
+# 发送邮件配置  # 还没配完
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # smpt服务地址
 EMAIL_HOST = 'smtp.163.com'
