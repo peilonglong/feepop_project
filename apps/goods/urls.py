@@ -1,1 +1,1 @@
-from django.conf.urls import urlfrom goods import viewsapp_name = 'goods'urlpatterns = [    url(r'^$', views.index, name='index'), # 首页]
+from django.conf.urls import urlfrom goods import viewsapp_name = 'goods'urlpatterns = [    url(r'^goodinfo', views.goodinfo, name='goodinfo'),    url(r'^goodlist', views.goodlist, name='goodlist'),    url(r'^$', views.index, name='index'), # 首页]

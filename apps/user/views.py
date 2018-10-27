@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect
+from django.core.urlresolvers import reverse
 from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import View
@@ -30,7 +31,7 @@ class RegisterView(View):
         else:
             '''进行注册处理'''
             # 接受数据
-            username = request.POST.get('user_name')
+            username = request.POST.get('username')
             password = request.POST.get('pwd')
             email = request.POST.get('email')
             allow = request.POST.get('allow')
@@ -147,11 +148,13 @@ class LoginView(View):
         # 业 务处理: 登录处理
 
         user = authenticate(username=username, password=password)
+
         if user is not None:
             # 用户名密码正确
             if user.is_active:
                 # 用户已激活
                 # 记录用户的登录状态
+                print('*'*50)
                 login(request, user)
 
                 # 获取登录后所要跳转到的地址
