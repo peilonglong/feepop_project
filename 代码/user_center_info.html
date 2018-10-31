@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block right_content %}
+    <h3 class="common_title2">基本信息</h3>
+        <ul>
+            <li><span>用户名：</span>{{ user.username }}</li>
+            {% if address %}
+            <li><span>联系电话：</span>{{ address.phone}}</li>
+            <li><span>联系地址：</span>{{ address.addr }}</li>
+            {% endif %}
+        </ul>
+    <div>
+
+    </div>
+
+{% endblock right_content %}

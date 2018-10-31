@@ -12,6 +12,21 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='OrderAfterSales',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),
+                ('create_time', models.DateTimeField(verbose_name='创建时间', auto_now_add=True)),
+                ('update_time', models.DateTimeField(verbose_name='更新时间', auto_now=True)),
+                ('is_delete', models.BooleanField(verbose_name='删除标记', default=False)),
+                ('service_type', models.SmallIntegerField(verbose_name='选择类型', null=True, default=3, choices=[(1, '退款'), (2, '退货'), (3, '换货')])),
+                ('After_review', models.TextField(verbose_name='售后评论', max_length=200, blank=True)),
+                ('picture', models.ImageField(verbose_name='上传照片', upload_to='except_photo')),
+            ],
+            options={
+                'abstract': False,
+            },
+        ),
+        migrations.CreateModel(
             name='OrderGoods',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),

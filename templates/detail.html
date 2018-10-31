@@ -1,0 +1,464 @@
+{% extends 'base_detail_list.html' %}
+{% load staticfiles %}
+{% block title %}商品详情页{% endblock title %}
+
+
+{% block row %}    <!-- BREADCRUMB -->
+    <div class="row">
+    <!-- Product main img -->
+    <div class="col-md-5 col-md-push-2">
+        <div id="product-main-img">
+            <div class="product-preview">                <!--用户选择的图片表-->
+
+                <img src="/{{ sku.image.url }}" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    <!-- /Product main img -->
+
+    <!-- Product thumb imgs -->
+    <div class="col-md-2  col-md-pull-5">
+        <div id="product-imgs">
+            <div class="product-preview">
+                <img src="/{{ sku.image.url }}" alt="">
+            </div>
+            <div class="product-preview">
+                <img src="/{{ sku.image.url }}" alt="">
+            </div>
+
+            <div class="product-preview">
+                <img src="/{{ sku.image.url }}" alt="">
+            </div>
+
+            <div class="product-preview">
+                <img src="/{{ sku.image.url }}" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- /Product thumb imgs -->
+
+    <!-- Product details -->
+    <div class="col-md-5">
+        <div class="product-details">
+            <h2>{{ sku.name }}</h2>
+            <div>
+                <div class="product-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <a class="review-link" href="#">10 人已收藏 | 添加到收藏</a>
+            </div>
+            <div>
+                <h3 class="product-price"><em>{{ sku.price }}</em></h3>
+                <span class="product-old-price">税费:<em>{{ sku.taxes }}元</em></span>
+                <span class="product-available">库存1000{{ sku.stock }}</span>
+
+            </div>
+            <p class="product-label">{{ sku.country }}</p>
+            <p> 描述信息 </p>
+
+            <div class="product-options">
+                <label>
+                    大小
+                    <select class="input-select">
+                        <option value="0">X</option>
+                    </select>
+                </label>
+                <label>
+                    颜色
+                    <select class="input-select">
+                        <option value="0">Red</option>
+                    </select>
+                </label>
+
+                <label>
+                    规格
+
+                </label>
+            </div>
+
+            <div class="add-to-cart">
+                <div class="qty-label">
+                    数量
+                    <div class="input-number">
+                        <input type="number" class="good_num" value="1">
+                        <a href="javascript:;" class="qty-up">+</a>
+                        <a href="javascript:;" class="qty-down">-</a>
+                    </div>
+                </div>
+                <br>
+
+                <div class="total" style="padding-top: 20px">总价:<em>{{ sku.price }}</em></div>
+                {% csrf_token %}
+                    <hr>
+                    <a href="javascript:;">
+                        <button class="add-to-cart-btn"><i class="fa fa-shopping-basket"></i>立即购买</button>
+                    </a>
+                    <a href="javascript:;" sku_id="{{ sku.id }}" class="add_cart" id="add_cart">
+                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>加入购物车</button>
+                    </a>
+                </div>
+
+                <ul class="product-btns">
+                    <li><a href="#"><i class="fa fa-heart-o"></i> 添加到收藏列表</a></li>
+                </ul>
+
+                <ul class="product-links">
+                    <li>产品分类:</li>
+                    <li><a href="#">{{ sku.type }}</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+
+                <ul class="product-links">
+                    <li>分享到:</li>
+                    <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                    <li><a href="#"><i class="fa fa-wechat"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                    <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                </ul>
+                <hr>
+
+            </div>
+        </div>
+        <!-- /Product details -->
+
+        <!-- Product tab -->
+        <div class="col-md-12">
+            <div id="product-tab">
+                <!-- product tab nav -->
+                <ul class="tab-nav">
+                    <li class="active"><a data-toggle="tab" href="#tab1">商品描述</a></li>
+                    <li><a data-toggle="tab" href="#tab2">商品详情</a></li>
+                    <li><a data-toggle="tab" href="#tab3">评论 (3)</a></li>
+                </ul>
+                <!-- /product tab nav -->
+
+                <!-- product tab content -->
+                <div class="tab-content">
+                    <!-- tab1  -->
+                    <div id="tab1" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>{{ sku.desc }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /tab1  -->
+
+                    <!-- tab2  -->
+                    <div id="tab2" class="tab-pane fade in">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>{{ sku.goods.detail|safe }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /tab2  -->
+
+                    <!-- tab3  -->
+                    <div id="tab3" class="tab-pane fade in">
+                        <div class="row">
+                            <!-- Rating -->
+                            <div class="col-md-3">
+                                <div id="rating">
+                                    <div class="rating-avg">
+                                        <span>4.5</span>
+                                        <div class="rating-stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                    </div>
+                                    <ul class="rating">
+                                        <li>
+                                            <div class="rating-stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="rating-progress">
+                                                <div style="width: 80%;"></div>
+                                            </div>
+                                            <span class="sum">3</span>
+                                        </li>
+                                        <li>
+                                            <div class="rating-stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="rating-progress">
+                                                <div style="width: 60%;"></div>
+                                            </div>
+                                            <span class="sum">2</span>
+                                        </li>
+                                        <li>
+                                            <div class="rating-stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="rating-progress">
+                                                <div></div>
+                                            </div>
+                                            <span class="sum">0</span>
+                                        </li>
+                                        <li>
+                                            <div class="rating-stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="rating-progress">
+                                                <div></div>
+                                            </div>
+                                            <span class="sum">0</span>
+                                        </li>
+                                        <li>
+                                            <div class="rating-stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="rating-progress">
+                                                <div></div>
+                                            </div>
+                                            <span class="sum">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Rating -->
+
+                            <!-- Reviews -->
+                            <div class="col-md-6">
+                                <div id="reviews">
+                                    {% for order in sku_orders %}
+                                        <ul class="reviews">
+                                            <li>
+                                                <div class="review-heading">
+                                                    <h5 class="name">用户名:{{ order.order.user.username }}</h5>
+                                                    <p class="date">27 DEC 2018, 8:0 PM</p>
+                                                    <div class="review-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o empty"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="review-body">
+                                                    <p>{{ order.comment }}</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    {% endfor %}
+
+                                    <ul class="reviews-pagination">
+                                        <li class="active">1</li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Reviews -->
+                        </div>
+                    </div>
+                    <!-- /tab3  -->
+                </div>
+                <!-- /product tab content  -->
+            </div>
+        </div>
+        <!-- /product tab -->
+    </div>
+    <!-- /row -->
+{% endblock %}
+
+{#   {% block same_type %} #}  新品推荐
+{#    <div>#}
+{#                <ul class="products-tabs">#}
+{#                    {% for sku in same_spu_skus %}#}
+{#                        <li><a href="{% url 'goods:detail' sku.id %}">{{ sku.name }}</a></li>#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+{#    </div>#}
+{#{% endblock %}#}
+
+
+{% block new_type %}
+    <!-- Section -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h3 class="title">新品推荐</h3>
+                    </div>
+                </div>
+                <!-- product -->
+                {% for sku in new_skus %}
+                    <div class="col-md-3 col-xs-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="{% url 'goods:detail' sku.id %}"><img src="/{{ sku.image.url }}"></a>
+                                <div class="product-label">
+                                    <span class="sale">-30%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">{{ sku.type }}</p>
+                                <h4><a href="{% url 'goods:detail' sku.id %}">{{ sku.name }}</a></h4>
+                                <h4 class="product-price">￥{{ sku.price }}元</h4>
+                                <div class="product-rating">
+                                </div>
+                                <div class="product-btns">
+                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span>
+                                    </button>
+                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span>
+                                    </button>
+                                    <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <!-- /product -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /Section -->
+
+{% endblock %}
+
+
+{% block bottomfiles %}
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript">
+        update_goods_amount();
+
+        // 计算商品的总价格
+        function update_goods_amount() {
+            // 获取商品的单价和数量以及税费
+            price = $(".product-price").firstChild('em').text();
+            count = $(".good_num").val();
+            taxes = $(".product-old-price").lastChild("em").text();
+            // 计算商品的总价
+            price = parseFloat(price);
+            count = parseInt(count);
+            taxes = parseFloat(taxes);
+
+            amount = price * count + taxes * 0.02;
+            // 设置商品的总价
+            $('.total').children('em').text(amount.toFixed(2) + '元')
+        }
+
+        // 增加商品的数量
+        // qty-up  qty-down
+        $('.qty-up').click(function () {
+            // 获取商品原有的数目
+            count = $(".good_num").val();
+            // 加1
+            count = parseInt(count) + 1;
+            // 重新赋值商品的count
+            $(".good_num").val(count);
+            // 更新商品的总价
+            update_goods_amount()
+        });
+
+        // 减少商品的数量
+        $('.qty-down').click(function () {
+            // 获取商品原有的数目
+            count = $(".good_num").val();
+            // 减1
+            count = parseInt(count) - 1;
+            if (count <= 0) {
+                count = 1
+            }
+            // 重新赋值商品的count
+            $(".good_num").val(count);
+            // 更新商品的总价
+            update_goods_amount()
+        });
+
+        // 手动输入商品的数量
+        $(".good_num").blur(function () {
+            // 获取用户输入的数目
+            count = $(this).val();
+
+            if (isNaN(count) || count.trim().length === 0 || parseInt(count) <= 0) {
+                count = 1
+            }
+            // 重新设置商品的数目
+            $(this).val(count);
+            // 更新商品的总价
+            update_goods_amount()
+        });
+
+        var $add_x = $("#add_cart").offset().top;
+        var $add_y = $("#add_cart").offset().left();
+
+        var $to_x = $(".qty").offset().top;
+        var $to_y = $(".qty").offset().left();
+
+
+        $("#add_cart").click(function () {
+            // 获取商品的id和商品的数量
+            sku_id = $(this).attr('sku_id');
+            count = $('.good_num').val();
+            alert(sku_id + ":" + count);
+            // 组织参数
+            params = {'sku_id': sku_id, 'count': count};
+            // 发起ajax post 请求, 访问/cart/add,传递参数:sku_id, count
+            $.post('/cart/add', params, function (data) {
+                if (data.res === 5) {
+                    // 添加成功
+                    $('.add_jump').css({'left': $add_y + 80, 'top': $add_x + 10, 'display': 'block'});
+                    $(".add_jump").stop().animate({
+                            'left': $to_y + 7,
+                            'top': $to_x + 7
+                        },
+                        "fast", function () {
+                            $(".add_jump").fadeOut('fast', function () {
+                                // 重新设置用户购物车中商品条目数
+                                $(".qty").html(data.total_count)
+                            });
+                        });
+                }
+                else {
+                    // 添加失败
+                    alert(data.errmsg)
+                }
+            });
+
+        })
+    </script>
+{% endblock %}

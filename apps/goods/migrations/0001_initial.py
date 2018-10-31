@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import tinymce.models
 
 
 class Migration(migrations.Migration):
@@ -19,7 +18,7 @@ class Migration(migrations.Migration):
                 ('update_time', models.DateTimeField(verbose_name='更新时间', auto_now=True)),
                 ('is_delete', models.BooleanField(verbose_name='删除标记', default=False)),
                 ('name', models.CharField(verbose_name='商品SPU名称', max_length=20)),
-                ('detail', tinymce.models.HTMLField(verbose_name='商品详情', blank=True)),
+                ('detail', models.TextField(verbose_name='商品详情', blank=True)),
             ],
             options={
                 'verbose_name': '商品SPU',
@@ -50,6 +49,7 @@ class Migration(migrations.Migration):
                 ('update_time', models.DateTimeField(verbose_name='更新时间', auto_now=True)),
                 ('is_delete', models.BooleanField(verbose_name='删除标记', default=False)),
                 ('name', models.CharField(verbose_name='商品名称', max_length=20)),
+                ('brand', models.CharField(verbose_name='商品品牌', max_length=100)),
                 ('desc', models.CharField(verbose_name='商品简介', max_length=256)),
                 ('price', models.DecimalField(verbose_name='商品价格', max_digits=10, decimal_places=2)),
                 ('country', models.CharField(verbose_name='所属国家', max_length=20)),
@@ -57,7 +57,7 @@ class Migration(migrations.Migration):
                 ('stock', models.IntegerField(verbose_name='商品库存', default=1)),
                 ('sales', models.IntegerField(verbose_name='商品销量', default=0)),
                 ('status', models.SmallIntegerField(verbose_name='商品状态', default=1, choices=[(0, '下线'), (1, '上线')])),
-                ('goods', models.ForeignKey(verbose_name='商品SPU', on_delete=True, to='goods.Goods')),
+                ('goods', models.ForeignKey(verbose_name='商品SPU', to='goods.Goods')),
             ],
             options={
                 'verbose_name': '商品',
@@ -91,7 +91,7 @@ class Migration(migrations.Migration):
                 ('is_delete', models.BooleanField(verbose_name='删除标记', default=False)),
                 ('image', models.ImageField(verbose_name='图片', upload_to='banner')),
                 ('index', models.SmallIntegerField(verbose_name='展示顺序', default=0)),
-                ('sku', models.ForeignKey(verbose_name='商品', on_delete=True, to='goods.GoodsSKU')),
+                ('sku', models.ForeignKey(verbose_name='商品', to='goods.GoodsSKU')),
             ],
             options={
                 'verbose_name': '首页轮播图',
@@ -126,8 +126,8 @@ class Migration(migrations.Migration):
                 ('is_delete', models.BooleanField(verbose_name='删除标记', default=False)),
                 ('display_type', models.SmallIntegerField(verbose_name='展示类型', default=1, choices=[(0, '标题'), (1, '图片')])),
                 ('index', models.SmallIntegerField(verbose_name='展示顺序', default=0)),
-                ('sku', models.ForeignKey(verbose_name='商品SKU', on_delete=True, to='goods.GoodsSKU')),
-                ('type', models.ForeignKey(verbose_name='商品类型', on_delete=True, to='goods.GoodsType')),
+                ('sku', models.ForeignKey(verbose_name='商品SKU', to='goods.GoodsSKU')),
+                ('type', models.ForeignKey(verbose_name='商品类型', to='goods.GoodsType')),
             ],
             options={
                 'verbose_name': '主页分类展示商品',
@@ -138,11 +138,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='goodssku',
             name='type',
-            field=models.ForeignKey(verbose_name='商品种类', on_delete=True, to='goods.GoodsType'),
+            field=models.ForeignKey(verbose_name='商品种类', to='goods.GoodsType'),
         ),
         migrations.AddField(
             model_name='goodsimage',
             name='sku',
-            field=models.ForeignKey(verbose_name='商品', on_delete=True, to='goods.GoodsSKU'),
+            field=models.ForeignKey(verbose_name='商品', to='goods.GoodsSKU'),
         ),
     ]

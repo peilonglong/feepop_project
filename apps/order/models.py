@@ -48,8 +48,8 @@ class OrderInfo(BaseModel):
     )
 
     order_num = OrderNumberField(max_length=20, verbose_name='单号')
-    user = models.ForeignKey('user.User', verbose_name='用户', on_delete=True)
-    addr = models.ForeignKey('user.Address', verbose_name='地址', on_delete=True)
+    user = models.ForeignKey('user.User', verbose_name='用户', on_delete=models.CASCADE)
+    addr = models.ForeignKey('user.Address', verbose_name='地址', on_delete=models.CASCADE)
     pay_method = models.SmallIntegerField(choices=PAY_METHOD_CHOICES, default=3, verbose_name='支付方式')
     total_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品总价')
     transit_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品运费')
@@ -65,8 +65,8 @@ class OrderInfo(BaseModel):
 
 class OrderGoods(BaseModel):
     '''订单商品模型类'''
-    order = models.ForeignKey('OrderInfo', verbose_name='订单', on_delete=True)
-    sku = models.ForeignKey('goods.GoodsSKU', verbose_name='商品SKU', on_delete=True)
+    order = models.ForeignKey('OrderInfo', verbose_name='订单', on_delete=models.CASCADE)
+    sku = models.ForeignKey('goods.GoodsSKU', verbose_name='商品SKU', on_delete=models.CASCADE)
     count = models.IntegerField(default=1, verbose_name='商品数目')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品价格')
     comment = models.CharField(max_length=256, verbose_name='评论')
@@ -75,3 +75,16 @@ class OrderGoods(BaseModel):
         db_table= 'df_order_goods'
         verbose_name = '订单商品'
         verbose_name_plural = verbose_name
+
+
+class OrderAfterSales(BaseModel):
+    '''售后服务模型类'''
+    SALES_RETURN_CHOICE = (
+        (1,'退款'),
+        (2,'退货'),
+        (3,'换货'),
+    )
+    rel_order = models.ForeignKey('OrderGoods',verbose_name='订单商品',on_delete=models.CASCADE, default=1)
+    service_type = models.SmallIntegerField(choices=SALES_RETURN_CHOICE, default=3, verbose_name='选择类型',null=True)
+    After_review = models.TextField(max_length=200,verbose_name='售后评论', blank=True)
+    picture = models.ImageField(upload_to='except_photo', verbose_name='上传照片')
