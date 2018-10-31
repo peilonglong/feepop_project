@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>售后服务页面</title>
+    <style>
+        #chuantu{
+            width:150px;
+            height: 147px;
+        }
+        #wenbenkuang{
+            width: 676px;
+            height: 478px;
+            border:3px solid #ccc;
+        }
+        #biaoti{
+            width: 800px;
+            height: 45px;
+        }
+        #biaotikuai span{
+            display:inline-block;
+            padding:0 47px;
+            background-color: #ccc;
+        }
+        #xuxiankuang{
+            width: 646px;
+            height: 156px;
+        }
+        .shangpinkuang{
+            display: inline-block;
+            width: 155px;
+            height: 120px;
+            border:1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<div id="biaoti">
+    <span>申请售后</span>
+    <span>售后政策</span>
+    <span>联系客服</span>
+    <div id="biaotikuai">
+        <span>商品名称</span>
+        <span>包装清单</span>
+        <span>售后清单</span>
+        <span>购买数量</span></div>
+</div>
+<div id="xuxiankuang">
+    <span class="shangpinkuang"></span>
+    <span class="shangpinkuang"></span>
+    <span class="shangpinkuang"></span>
+    <span class="shangpinkuang"></span>
+</div>
+<div id="wenbenkuang">
+    <form>
+        <input type="radio" name="rd" id="rd1" value="退款" checked="checked"/>退款
+        <input type="radio" name="rd" id="rd1" value="退货" checked="checked"/>退货
+        <input type="radio" name="rd" id="rd1" value="换货" checked="checked"/>换货<br/>
+        退款原因<br/>
+        <textarea rows="10" cols="50" name="text1" value="退款原因"></textarea><br/>
+        上传图片<br/>
+        <input id="chuantu" type="image" src="images/dog.jpg" name="photo" value="上传图片" onclick="ImgSelector.click()"><br/>
+        <input type="submit"  value="提交" />
+    </form>
+    <input type="file" id="ImgSelector"
+               onchange="uploadImg(this.files[0])"
+               style="display: none">
+    {{ errmsg }}
+</div>
+</body>
+</html>
+{% block js %}
+    <script>
+    function uploadImg(imgFile) {
+        // dom,bom浏览器操作,ECMAscript
+        //要求只能上传图片,大小限制在2M以内
+        {#let file_type = imgFile.type;#}
+        {#let file_size = imgFile.size;#}
+
+        if(! imgFile.type.startWith('image/')){
+            alert('只限制为图片文件!');
+            return
+        }
+
+        if(imgFile.size > 2*1024*1024){
+            alert('图片大小已超出2M!');
+            return
+        }
+
+        if(confirm('是否要上传图片')){
+            alert(imgFile.name);
+            console.log(imgFile);
+
+            let url = '/user/upload_img/';
+            let formData = new FormData();
+
+            // 向表单数据中添加img 文件字段及文件字段
+            formData.append('img',imgFile);
+
+            // AJAX 异步请求对象
+            let request = new XMLHttpRequest();
+            request.open('post',url,true);
+
+            //  设置请求完成后的事件处理函数
+            request.onload = function () {
+                if (request.status == 200 && request.readyState ==4){
+                    resp_data = Json.parse(request.responseText);
+                    if(resp_data.code == 20){
+                        alert('--上传成功!--');
+                        alert(resp_data.path);
+
+                        // 显示图片
+                        $('#preImg').attr('src','/static/'+resp_data.path);
+
+                        // 将上传图片的路径加入到hidden的photo字段中
+                        $('input[name="photo"]').val(resp_data.path);
+                    }else{
+                        // 上传发生错误
+                        alert(resp.msg);
+                    }
+                }
+            }
+
+            // 发送数据
+            request.send(formData);
+        }
+
+    }
+    </script>
+{% endblock %}
+{% block bottomfiles %}
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/slick.min.js' %}"></script>
+		<script src="{% static 'js/nouislider.min.js' %}"></script>
+		<script src="{% static 'js/jquery.zoom.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+{% endblock bottomfiles %}

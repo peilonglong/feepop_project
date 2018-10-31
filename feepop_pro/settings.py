@@ -152,11 +152,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
 # 发送邮件的邮箱
-EMAIL_HOST_USER = 'smartli_it@163.com'
+EMAIL_HOST_USER = 'claywooq@163.com'
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'smartli123'
+EMAIL_HOST_PASSWORD = 'clay123'
 # 收件人看到的发件人
-EMAIL_FROM = '<smartli_it@163.com>'
+EMAIL_FROM = 'feepop海外公司<claywooq@163.com>'
 
 
 # Django的缓存配置
@@ -177,3 +177,8 @@ SESSION_CACHE_ALIAS = "default"
 # 配置登录url地址
 LOGIN_URL = '/user/login'  # /accounts/login
 
+
+# FileField 和 ImageField上传的文件存放的位置
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+# 上传文件的url访问的位置
+MEDIA_URL = 'static/images/'

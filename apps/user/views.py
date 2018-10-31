@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
 from django.core.mail import send_mail
+
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import View
 from django.http import HttpResponse
@@ -41,7 +42,7 @@ class RegisterView(View):
                 # 数据不完整
                 return render(request, 'register.html', {'errmsg': '数据不完整'})
             # 校验邮箱
-            if not re.match(r"^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$", email):
+            if not re.match(r"^[a-z0-9][\w.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$", email):
                 return render(request, 'register.html', {'errmsg': '邮箱格式不正确'})
 
             if allow != 'on':
@@ -71,14 +72,6 @@ class RegisterView(View):
             token = serializer.dumps(info)  # bytes
             token = token.decode()  # 解码 默认为utf8
 
-            # 发邮件
-            # subject = '天天生鲜欢迎信息'  # 邮件标题
-            # message = '邮件正文:'          # 邮件正文(有html标签则要剪贴在html_message关键字参数中)
-            # sender = settings.EMAIL_FROM    # 发送人
-            # receiver = [email]              # 接收人列表
-            # html_message = '<h1>{},欢迎您成为天天生鲜注册会员<h1>请点击下面的链接激活您的账户<br/><a href="http://127.0.0.1:8000/user/active/{}">http://127.0.0.1:8000/user/active/{}</a>'.format(username,token,token)
-            #
-            # send_mail(subject,message ,sender, receiver,html_message=html_message)
             ''' send_mail()函数可能会发生阻塞,
                     则代码一直会停止在这: 造成用户体验差的问题
 
@@ -264,8 +257,6 @@ class AddressView(LoginRequiredMixin, View):
         '''显示'''
         # 获取登录用户对应User对象
         user = request.user
-
-
         address = Address.objects.get_default_address(user)
 
         # 使用模板
@@ -284,7 +275,7 @@ class AddressView(LoginRequiredMixin, View):
             return render(request, 'user_center_site.html', {'errmsg': '数据不完整'})
 
         # 校验手机号
-        if not re.match(r'^1[3|4|5|7|8][0-9]{9}$', phone):
+        if not re.match(r'^1[3-9]\d{9}$', phone):
             return render(request, 'user_center_site.html', {'errmsg': '手机格式不正确'})
 
         # 业务处理：地址添加

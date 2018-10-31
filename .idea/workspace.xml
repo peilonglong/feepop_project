@@ -2,26 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a400e17c-1514-4087-b211-fe7ac9d246ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base_no_cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/json电子类.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/108a4fd1-56c1-4163-b64c-c9b7377ad657.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/108a4fd1-56c1-4163-b64c-c9b7377ad657_NfHqVIg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/20543579-7c62-42d0-aaa6-14a72e69b072.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/20543579-7c62-42d0-aaa6-14a72e69b072_TX4mFEC.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/2221ab6e-4c95-4cf6-8ad8-94ccfef39398.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/2221ab6e-4c95-4cf6-8ad8-94ccfef39398_Uxbytb6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/373baf588b7541a49a7855c5bf846dff1536816992901jm055ox910850.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/373baf588b7541a49a7855c5bf846dff1536816992901jm055ox910850_vqpJpRI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/702389b782974212b6c950611ab712641534386565829jkvy57ec10690.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/702389b782974212b6c950611ab712641534386565829jkvy57ec10690_opjTI5J.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/8d7320dc360e485fa87b3b4f58a237af1528804167689jibmj1f314451.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/8d7320dc360e485fa87b3b4f58a237af1528804167689jibmj1f314451_OWCtVD1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/a2c4f5ae-2c65-45c7-b44c-c29d02b19c81.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/a2c4f5ae-2c65-45c7-b44c-c29d02b19c81_UR5tAep.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/b47c3cae83d64c2f85993e7d935b3c6c1528343166781ji4026ua16561.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/b47c3cae83d64c2f85993e7d935b3c6c1528343166781ji4026ua16561_tdcSXcK.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/infewsrj99_800_800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/infewsrj99_800_800_EFqnd36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/goods/网易严选_奶油鸡蛋卷_150克_休闲零食..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/type/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/type/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/type/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base_detail_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/yemianbuju.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/type/网易严选_牛轧饼_280克__休闲零食..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/手表.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/点评.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/电商数据.wps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/美食蛋糕.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48b9e072-8659-44a6-8089-90e74e7fa1c4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48b9e072-8659-44a6-8089-90e74e7fa1c4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/order/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/order/migrations/0002_auto_20181026_0046.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/order/migrations/0002_auto_20181027_1131.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery_tasks/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/celery_tasks/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feepop_pro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/feepop_pro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/slick-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feepop_pro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/feepop_pro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/Ballantine百龄坛.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/Ballantine百龄坛.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/Chivas芝华士.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/Chivas芝华士.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/Johnnie Waliker 尊尼获加.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/Johnnie Waliker 尊尼获加.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/Singleton苏格登.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/Singleton苏格登.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11提前购 买贵赔 到手价799】年度爆款 30天无理由退换货 科沃斯智能扫地机器人星云吸尘器..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11提前购 买贵赔 到手价799】年度爆款 30天无理由退换货 科沃斯智能扫地机器人星云吸尘器..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11领券再减100 到手价1199】30天无理由退换货 科沃斯DD37扫地机器人家用吸尘器扫拖地.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11领券再减100 到手价1199】30天无理由退换货 科沃斯DD37扫地机器人家用吸尘器扫拖地.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11领券再减100 到手价1199】科沃斯扫地机器人家用全自动智能扫地拖地机器人吸尘器地宝DO37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11领券再减100 到手价1199】科沃斯扫地机器人家用全自动智能扫地拖地机器人吸尘器地宝DO37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11领券再减100 到手价1399】科沃斯DL35 扫地机器人智能规划自动吸尘器家用拖地机器人.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11领券再减100 到手价1399】科沃斯DL35 扫地机器人智能规划自动吸尘器家用拖地机器人.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11领券再减100 到手价1499】科沃斯扫地机器人家用全自动一体机扫地拖地宝智能吸尘器DE55..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11领券再减100 到手价1499】科沃斯扫地机器人家用全自动一体机扫地拖地宝智能吸尘器DE55..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11领券再减100 到手价1899】科沃斯DN33扫地机器人家用拖地扫拖一体LDS激光扫描规划..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11领券再减100 到手价1899】科沃斯DN33扫地机器人家用拖地扫拖一体LDS激光扫描规划..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【11·11领券再减100 到手价999】科沃斯扫地机器人一体机超薄DB35 30天无理由退换货地宝.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【11·11领券再减100 到手价999】科沃斯扫地机器人一体机超薄DB35 30天无理由退换货地宝.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【到手1999，预付100抵800】iRobot 智能扫地机器人 Roomba 880 吸尘器..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【到手1999，预付100抵800】iRobot 智能扫地机器人 Roomba 880 吸尘器..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【前200名定金4倍膨胀 抵扣200 到手价799】科沃斯扫地机器人家用超薄静音地宝纤纤 30天无理由退换..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【前200名定金4倍膨胀 抵扣200 到手价799】科沃斯扫地机器人家用超薄静音地宝纤纤 30天无理由退换..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【前200名定金8倍膨胀 抵扣400 到手价1099】年度爆款 30天无理由退换 科沃斯星云S扫地机器人家用清洁地宝..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【前200名定金8倍膨胀 抵扣400 到手价1099】年度爆款 30天无理由退换 科沃斯星云S扫地机器人家用清洁地宝..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【双11预告2？80元】HOBOT 第三代台湾玻妞擦窗机器人家用擦窗宝 自动擦窗 198..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【双11预告2？80元】HOBOT 第三代台湾玻妞擦窗机器人家用擦窗宝 自动擦窗 198..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【有效期至2018-11-28】考拉工厂店 北海道牛奶小吐司 约24个.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【有效期至2018-11-28】考拉工厂店 北海道牛奶小吐司 约24个.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/【税费补贴】ISHIYA 白色恋人 礼盒白巧克力夹心薄饼12枚132克.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/【税费补贴】ISHIYA 白色恋人 礼盒白巧克力夹心薄饼12枚132克.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/伏特加原味.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/伏特加原味.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/德国Knoppers牛奶巧克力榛子五层夹心威化饼干 10连包 250g.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/德国Knoppers牛奶巧克力榛子五层夹心威化饼干 10连包 250g.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/杰克丹尼 美国田纳西州.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/杰克丹尼 美国田纳西州.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/网易严选 奶油鸡蛋卷 150克 休闲零食..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/欧洲 奶油鸡蛋卷 150克 休闲零食..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/网易严选 奶萨酥 210克（6包入）  休闲零食.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/网易严选 奶萨酥 210克（6包入）  休闲零食.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/网易严选 杏仁松塔 160克 休闲零食..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/网易严选 杏仁松塔 160克 休闲零食..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/网易严选 牛轧饼 280克  休闲零食..jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/网易严选 牛轧饼 280克  休闲零食..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/网易严选 绿豆糕 休闲零食.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/网易严选 绿豆糕 休闲零食.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/网易严选 黄山烧饼 168克（8枚入） 休闲零食.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/网易严选 黄山烧饼 168克（8枚入） 休闲零食.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/考拉工厂店   苏丹王榴莲千层蛋糕 650克.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/考拉工厂店   苏丹王榴莲千层蛋糕 650克.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/陈年朗姆酒.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/陈年朗姆酒.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/麦芽奶油利口酒.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/麦芽奶油利口酒.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goods/（送折叠水壶）HOBOT 玻妞 擦窗机器人三代198家用全自动波妞擦玻璃机器人 购买送车载空净.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/goods/（送折叠水壶）HOBOT 玻妞 擦窗机器人三代198家用全自动波妞擦玻璃机器人 购买送车载空净.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/blank.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/hotdeal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logbgc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/regbgc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/shop02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/shop03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/shop1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/store.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base111.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_no_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_no_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/checkout.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/store.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,125 +207,151 @@
     <session id="-1069928967">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="7" />
-          <entry key="df_user" value="4" />
+          <entry key="css" value="8" />
+          <entry key="df_goods" value="4" />
+          <entry key="df_goods_image" value="3" />
+          <entry key="df_goods_sku" value="8" />
+          <entry key="df_goods_type" value="6" />
+          <entry key="df_index_banner" value="4" />
+          <entry key="df_index_promotion" value="3" />
+          <entry key="df_index_type_goods" value="2" />
+          <entry key="df_order_goods" value="2" />
+          <entry key="df_user" value="9" />
+          <entry key="django_admin_log" value="1" />
           <entry key="django_session" value="1" />
           <entry key="gitattributes" value="1" />
-          <entry key="html" value="75" />
-          <entry key="js" value="1" />
-          <entry key="png" value="2" />
-          <entry key="py" value="54" />
+          <entry key="html" value="156" />
+          <entry key="jpeg" value="2" />
+          <entry key="jpg" value="18" />
+          <entry key="js" value="6" />
+          <entry key="png" value="9" />
+          <entry key="py" value="156" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
-          <entry key="Database Element" value="5" />
-          <entry key="HTML" value="75" />
-          <entry key="Image" value="2" />
-          <entry key="JavaScript" value="1" />
+          <entry key="CSS" value="8" />
+          <entry key="Database Element" value="43" />
+          <entry key="HTML" value="156" />
+          <entry key="Image" value="29" />
+          <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="54" />
+          <entry key="Python" value="156" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="2" />
+          <entry key="cell" value="11" />
           <entry key="css" value="29" />
-          <entry key="html" value="3609" />
-          <entry key="py" value="829" />
+          <entry key="html" value="10121" />
+          <entry key="py" value="3832" />
           <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="29" />
-          <entry key="HTML" value="3609" />
+          <entry key="HTML" value="10121" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="829" />
-          <entry key="Scratch" value="2" />
+          <entry key="Python" value="3832" />
+          <entry key="Scratch" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
           <entry key="git.branch.create.new" value="1" />
-          <entry key="git.branch.merge" value="2" />
+          <entry key="git.branch.merge" value="4" />
           <entry key="git.branch.rename" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/user/views.py">
+        <entry file="file://$PROJECT_DIR$/templates/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="186" column="6" selection-start-line="186" selection-start-column="6" selection-end-line="186" selection-end-column="6" />
+            <state relative-caret-position="1026">
+              <caret line="125" column="68" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
-                <element signature="e#649#3444#0" />
-                <element signature="e#3475#4074#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
-              <folding>
-                <element signature="e#154#180#0#HTML" expanded="true" />
-                <element signature="e#954#980#0#HTML" expanded="true" />
-                <element signature="e#991#1017#0#HTML" expanded="true" />
+                <element signature="n#div#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="325" column="64" lean-forward="true" selection-start-line="325" selection-start-column="64" selection-end-line="325" selection-end-column="64" />
+            <state relative-caret-position="266">
+              <caret line="230" column="70" selection-start-line="230" selection-start-column="70" selection-end-line="230" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/index.html">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="1108" lean-forward="true" selection-start-line="1108" selection-end-line="1108" />
+            <state relative-caret-position="283">
+              <caret line="199" column="35" selection-start-line="199" selection-start-column="35" selection-end-line="199" selection-end-column="35" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="786" column="4" lean-forward="true" selection-start-line="786" selection-start-column="4" selection-end-line="791" selection-end-column="53" />
+            <state relative-caret-position="355">
+              <caret line="43" column="53" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-287">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_goods_type">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -230,8 +362,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -243,7 +375,14 @@
       <find>breadcrumb</find>
       <find>form</find>
       <find>label</find>
+      <find>product-options</find>
+      <find>qty</find>
+      <find>new</find>
       <find>image</find>
+      <find>aside</find>
+      <find>container</find>
+      <find>activ</find>
+      <find>fa fa-th</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -257,29 +396,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/basemodel.py" />
-        <option value="$PROJECT_DIR$/db/base_model.py" />
-        <option value="$PROJECT_DIR$/celery_tasks/tasks.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/utils/mixin.py" />
-        <option value="$PROJECT_DIR$/apps/order/models.py" />
         <option value="$PROJECT_DIR$/apps/order/migrations/apps.py" />
-        <option value="$PROJECT_DIR$/apps/goods/models.py" />
-        <option value="$PROJECT_DIR$/apps/user/models.py" />
-        <option value="$PROJECT_DIR$/feepop_pro/urls.py" />
-        <option value="$PROJECT_DIR$/apps/order/urls.py" />
-        <option value="$PROJECT_DIR$/apps/cart/urls.py" />
         <option value="$PROJECT_DIR$/static/temp/account.html" />
         <option value="$PROJECT_DIR$/static/blank.html" />
-        <option value="$PROJECT_DIR$/feepop_pro/settings.py" />
         <option value="$PROJECT_DIR$/static/index.html" />
-        <option value="$PROJECT_DIR$/templates/base_no_cart.html" />
         <option value="$PROJECT_DIR$/static/product.html" />
-        <option value="$PROJECT_DIR$/templates/product.html" />
-        <option value="$PROJECT_DIR$/static/store.html" />
         <option value="$PROJECT_DIR$/templates/store.html" />
-        <option value="$PROJECT_DIR$/apps/goods/urls.py" />
-        <option value="$PROJECT_DIR$/apps/goods/views.py" />
         <option value="$PROJECT_DIR$/static/css/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/templates/checkout.html" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
@@ -287,11 +411,42 @@
         <option value="$PROJECT_DIR$/static/css/slick-theme.css" />
         <option value="$PROJECT_DIR$/templates/base111.html" />
         <option value="$PROJECT_DIR$/apps/user/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/apps/user/views.py" />
         <option value="$PROJECT_DIR$/apps/user/urls.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/product.html" />
+        <option value="$PROJECT_DIR$/templates/base_no_cart111.html" />
+        <option value="$PROJECT_DIR$/apps/cart/urls.py" />
+        <option value="$PROJECT_DIR$/apps/goods/admin.py" />
+        <option value="$PROJECT_DIR$/apps/order/admin.py" />
+        <option value="$PROJECT_DIR$/apps/user/admin.py" />
+        <option value="$USER_HOME$/.virtualenvs/feepop/lib/python3.6/site-packages/tinymce/static/tiny_mce/langs/zh.js" />
+        <option value="$USER_HOME$/.virtualenvs/feepop/lib/python3.6/site-packages/tinymce/static/tiny_mce/themes/advanced/langs/zh.js" />
+        <option value="$PROJECT_DIR$/tinymce/settings.py" />
+        <option value="$PROJECT_DIR$/tinymce/models.py" />
+        <option value="$PROJECT_DIR$/apps/user/models.py" />
+        <option value="$PROJECT_DIR$/apps/cart/views.py" />
+        <option value="$PROJECT_DIR$/templates/cart111.html" />
+        <option value="$PROJECT_DIR$/feepop_pro/urls.py" />
+        <option value="$PROJECT_DIR$/templates/list111.html" />
+        <option value="$PROJECT_DIR$/static/store.html" />
+        <option value="$PROJECT_DIR$/apps/goods/views.py" />
+        <option value="$PROJECT_DIR$/apps/order/models.py" />
+        <option value="$PROJECT_DIR$/templates/yemianbuju.html" />
+        <option value="$PROJECT_DIR$/apps/order/views.py" />
+        <option value="$PROJECT_DIR$/apps/order/urls.py" />
+        <option value="$PROJECT_DIR$/order/urls.py" />
+        <option value="$PROJECT_DIR$/feepop_pro/settings.py" />
+        <option value="$PROJECT_DIR$/celery_tasks/tasks.py" />
+        <option value="$PROJECT_DIR$/apps/goods/urls.py" />
+        <option value="$PROJECT_DIR$/templates/base_no_cart.html" />
+        <option value="$PROJECT_DIR$/templates/cart.html" />
+        <option value="$PROJECT_DIR$/templates/list.html" />
+        <option value="$PROJECT_DIR$/apps/user/views.py" />
+        <option value="$PROJECT_DIR$/templates/base_detail_list.html" />
+        <option value="$PROJECT_DIR$/templates/detail.html" />
+        <option value="$PROJECT_DIR$/apps/goods/models.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -328,7 +483,12 @@
               <item name="feepop_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="feepop_project" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="feepop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="feepop_project" type="462c0819:PsiDirectoryNode" />
+              <item name="celery_tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="feepop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -343,12 +503,13 @@
             <path>
               <item name="feepop_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="feepop_project" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="feepop_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="feepop_project" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,7 +522,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../QM" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -378,8 +539,8 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/apps/cart" />
     </key>
   </component>
@@ -395,23 +556,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.cart.html">
     <configuration name="base.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/base.html">
       <method v="2" />
     </configuration>
-    <configuration name="base.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/base.html">
+    <configuration name="cart.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/cart.html">
       <method v="2" />
     </configuration>
-    <configuration name="checkout.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/static/checkout.html">
+    <configuration name="detail.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/detail.html">
       <method v="2" />
     </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/static/index.html">
       <method v="2" />
     </configuration>
     <configuration name="product.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/static/product.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="product.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/product.html">
       <method v="2" />
     </configuration>
     <configuration name="store.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/feepop_project/static/store.html">
@@ -442,20 +600,19 @@
     </configuration>
     <list>
       <item itemvalue="Django server.feepop_pro" />
-      <item itemvalue="JavaScript Debug.base.html" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
-      <item itemvalue="JavaScript Debug.checkout.html" />
       <item itemvalue="JavaScript Debug.product.html (1)" />
       <item itemvalue="JavaScript Debug.store.html" />
-      <item itemvalue="JavaScript Debug.product.html" />
+      <item itemvalue="JavaScript Debug.detail.html" />
+      <item itemvalue="JavaScript Debug.cart.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="JavaScript Debug.store.html" />
+        <item itemvalue="JavaScript Debug.cart.html" />
         <item itemvalue="JavaScript Debug.product.html (1)" />
-        <item itemvalue="JavaScript Debug.product.html" />
-        <item itemvalue="JavaScript Debug.checkout.html" />
+        <item itemvalue="JavaScript Debug.store.html" />
+        <item itemvalue="JavaScript Debug.detail.html" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -486,51 +643,51 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14719272" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17678301" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.19579288" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.25566342" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32847896" />
-      <window_info anchor="bottom" id="Python Console" order="4" weight="0.32847896" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32847896" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32847896" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32847896" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32847896" />
-      <window_info anchor="right" id="Database" order="0" weight="0.2003035" />
+      <window_info anchor="right" id="Database" order="0" weight="0.25644916" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.32852808" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21092564" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12367223" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.21682848" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.2249191" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32847896" />
-      <window_info anchor="bottom" id="Python Console" order="4" weight="0.3295082" />
-      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32847896" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32847896" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32847896" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32847896" />
-      <window_info anchor="right" id="Database" order="0" weight="0.32928678" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3057663" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.32852808" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout-to-restore>
@@ -568,282 +725,180 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/order/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_center_site.html" />
-    <entry file="file://$PROJECT_DIR$/templates/base_user_center.html" />
-    <entry file="file://$PROJECT_DIR$/templates/user_center_order.html" />
-    <entry file="file://$PROJECT_DIR$/celery_tasks/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/order/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/cart/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feepop_pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_detail_list.html" />
-    <entry file="file://$PROJECT_DIR$/static/temp/account.html" />
-    <entry file="file://$PROJECT_DIR$/templates/user_center_info.html" />
-    <entry file="file://$PROJECT_DIR$/templates/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static2_dayfrish/cart.html" />
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/base.html" />
-    <entry file="file://$PROJECT_DIR$/templates/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4085">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feepop_pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <element signature="e#311#320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
+    <entry file="file://$PROJECT_DIR$/static/images/type/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_no_cart.html">
+    <entry file="file://$PROJECT_DIR$/static/images/type/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/product.html" />
+    <entry file="file://$PROJECT_DIR$/static/store.html" />
+    <entry file="file://$PROJECT_DIR$/static/images/goods/8d7320dc360e485fa87b3b4f58a237af1528804167689jibmj1f314451.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list111.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="190">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/product.html">
+    <entry file="file://$PROJECT_DIR$/templates/detail111.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="190" column="23" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="23" />
+        <state relative-caret-position="-1577">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11913">
-          <caret line="209" column="24" lean-forward="true" selection-start-line="209" selection-start-column="24" selection-end-line="209" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <marker date="1540559481445" expanded="true" signature="187:192" ph="..." />
-            <marker date="1540559481445" expanded="true" signature="270:275" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/goods/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1603">
-          <caret line="353" column="41" lean-forward="true" selection-start-line="353" selection-start-column="36" selection-end-line="353" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1540485197621" expanded="true" signature="328:794" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/48b9e072-8659-44a6-8089-90e74e7fa1c4/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="n#block#1;n#!!top" />
-            <element signature="e#13141#18521#0#HTML" />
-            <element signature="e#18567#19482#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="526" selection-start-line="526" selection-end-line="526" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35397">
-          <caret line="1008" column="20" selection-start-line="1008" selection-start-column="20" selection-end-line="1008" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="59" column="120" selection-start-line="59" selection-start-column="120" selection-end-line="59" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/slick-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/slick.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6398">
-          <caret line="794" column="1" lean-forward="true" selection-start-line="794" selection-start-column="1" selection-end-line="794" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login (copy).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="7" column="83" lean-forward="true" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/order/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/django_session">
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_goods_image">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/feepop/lib/python3.6/site-packages/django/contrib/auth/__init__.py">
+    <entry file="file://$PROJECT_DIR$/templates/yemianbuju.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base111.html">
+    <entry file="file://$PROJECT_DIR$/templates/address.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/migrations/0001_initial.py">
+    <entry file="file://$PROJECT_DIR$/templates/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/代码/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/order/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#230#951#0" />
+            <element signature="e#1033#1107#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feepop_pro/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/smtplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="641" selection-start-line="641" selection-end-line="641" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feepop_pro/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="158" column="24" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
+          <folding>
+            <element signature="e#311#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/order/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_tasks/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="24" column="161" lean-forward="true" selection-start-line="24" selection-start-column="161" selection-end-line="24" selection-end-column="161" />
+          <folding>
+            <element signature="e#11#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/order/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_order_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <folding>
-            <element signature="e#49#81#0" expanded="true" />
-          </folding>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="186" column="6" selection-start-line="186" selection-start-column="6" selection-end-line="186" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-            <element signature="e#649#3444#0" />
-            <element signature="e#3475#4074#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/django_admin_log">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -854,49 +909,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/user/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/cart111.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="-38">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_no_cart111.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_no_cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_goods_sku">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+        <state relative-caret-position="463">
+          <caret line="277" column="35" selection-start-line="277" selection-start-column="35" selection-end-line="277" selection-end-column="35" />
           <folding>
-            <element signature="e#154#180#0#HTML" expanded="true" />
-            <element signature="e#954#980#0#HTML" expanded="true" />
-            <element signature="e#991#1017#0#HTML" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#686#2943#0" />
+            <element signature="e#2974#3573#0" />
+            <element signature="e#3617#5376#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/base_detail_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="1108" lean-forward="true" selection-start-line="1108" selection-end-line="1108" />
+        <state relative-caret-position="78">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#518#1914#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6308">
+          <caret line="332" column="75" selection-start-line="332" selection-start-column="75" selection-end-line="332" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="125" column="68" selection-start-line="125" selection-start-column="68" selection-end-line="125" selection-end-column="68" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_index_type_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner/product05.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner/德国Knoppers牛奶巧克力榛子五层夹心威化饼干_10连包_250g.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner/27.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner/10.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner/1bktjpabs16_800_800.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/banner/38.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_index_banner">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="199" column="35" selection-start-line="199" selection-start-column="35" selection-end-line="199" selection-end-column="35" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_index_promotion">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48b9e072-8659-44a6-8089-90e74e7fa1c4/schema/feepop/table/df_goods_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/goods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="43" column="53" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="786" column="4" lean-forward="true" selection-start-line="786" selection-start-column="4" selection-end-line="791" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="325" column="64" lean-forward="true" selection-start-line="325" selection-start-column="64" selection-end-line="325" selection-end-column="64" />
+        <state relative-caret-position="266">
+          <caret line="230" column="70" selection-start-line="230" selection-start-column="70" selection-end-line="230" selection-end-column="70" />
         </state>
       </provider>
     </entry>

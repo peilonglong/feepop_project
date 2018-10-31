@@ -947,1192 +947,1261 @@
     <table id="251" parent="4" name="django_content_type"/>
     <table id="252" parent="4" name="django_migrations"/>
     <table id="253" parent="4" name="django_session"/>
-    <column id="254" parent="234" name="id">
+    <table id="254" parent="4" name="order_orderaftersales"/>
+    <column id="255" parent="234" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="234" name="name">
+    <column id="256" parent="234" name="name">
       <Position>2</Position>
       <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="256" parent="234" name="name">
+    <index id="257" parent="234" name="name">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="257" parent="234" name="PRIMARY">
+    <key id="258" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="258" parent="234" name="name">
+    <key id="259" parent="234" name="name">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
-    <column id="259" parent="235" name="id">
+    <column id="260" parent="235" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="235" name="group_id">
+    <column id="261" parent="235" name="group_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="235" name="permission_id">
+    <column id="262" parent="235" name="permission_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="262" parent="235" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <index id="263" parent="235" name="group_id">
       <ColNames>group_id
 permission_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="263" parent="235" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <index id="264" parent="235" name="auth_group_p_permission_id_125cb90ae598016_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="264" parent="235" name="PRIMARY">
+    <key id="265" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="265" parent="235" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <key id="266" parent="235" name="group_id">
       <ColNames>group_id
 permission_id</ColNames>
-      <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
+      <UnderlyingIndexName>group_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="266" parent="235" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+    <foreign-key id="267" parent="235" name="auth_group_permission_group_id_7c75930e526141e0_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>auth_group</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="267" parent="235" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <foreign-key id="268" parent="235" name="auth_group_p_permission_id_125cb90ae598016_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>auth_permission</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="268" parent="236" name="id">
+    <column id="269" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="236" name="name">
+    <column id="270" parent="236" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="236" name="content_type_id">
+    <column id="271" parent="236" name="content_type_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="236" name="codename">
+    <column id="272" parent="236" name="codename">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="272" parent="236" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <index id="273" parent="236" name="content_type_id">
       <ColNames>content_type_id
 codename</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="273" parent="236" name="PRIMARY">
+    <key id="274" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="274" parent="236" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <key id="275" parent="236" name="content_type_id">
       <ColNames>content_type_id
 codename</ColNames>
-      <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
+      <UnderlyingIndexName>content_type_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="275" parent="236" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
+    <foreign-key id="276" parent="236" name="auth__content_type_id_6166d9312c6ea4ad_fk_django_content_type_id">
       <ColNames>content_type_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>django_content_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="276" parent="237" name="id">
+    <column id="277" parent="237" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="237" name="create_time">
+    <column id="278" parent="237" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="237" name="update_time">
+    <column id="279" parent="237" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="237" name="is_delete">
+    <column id="280" parent="237" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="237" name="receiver">
+    <column id="281" parent="237" name="receiver">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="237" name="addr">
+    <column id="282" parent="237" name="addr">
       <Position>6</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="237" name="zip_code">
+    <column id="283" parent="237" name="zip_code">
       <Position>7</Position>
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="237" name="phone">
+    <column id="284" parent="237" name="phone">
       <Position>8</Position>
       <DataType>varchar(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="237" name="is_default">
+    <column id="285" parent="237" name="is_default">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="237" name="user_id">
+    <column id="286" parent="237" name="user_id">
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="286" parent="237" name="df_address_user_id_5e6a5c8a_fk_df_user_id">
+    <index id="287" parent="237" name="df_address_user_id_dbae930f4f84626_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="287" parent="237" name="PRIMARY">
+    <key id="288" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="288" parent="237" name="df_address_user_id_5e6a5c8a_fk_df_user_id">
+    <foreign-key id="289" parent="237" name="df_address_user_id_dbae930f4f84626_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="289" parent="238" name="id">
+    <column id="290" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="238" name="create_time">
+    <column id="291" parent="238" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="238" name="update_time">
+    <column id="292" parent="238" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="238" name="is_delete">
+    <column id="293" parent="238" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="238" name="name">
+    <column id="294" parent="238" name="name">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="238" name="detail">
+    <column id="295" parent="238" name="detail">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="295" parent="238" name="PRIMARY">
+    <key id="296" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="296" parent="239" name="id">
+    <column id="297" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="239" name="create_time">
+    <column id="298" parent="239" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="239" name="update_time">
+    <column id="299" parent="239" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="239" name="is_delete">
+    <column id="300" parent="239" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="239" name="image">
+    <column id="301" parent="239" name="image">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="239" name="sku_id">
+    <column id="302" parent="239" name="sku_id">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="302" parent="239" name="df_goods_image_sku_id_f8dc96ea_fk_df_goods_sku_id">
+    <index id="303" parent="239" name="df_goods_image_22ad5bca">
       <ColNames>sku_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="303" parent="239" name="PRIMARY">
+    <key id="304" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="304" parent="239" name="df_goods_image_sku_id_f8dc96ea_fk_df_goods_sku_id">
+    <foreign-key id="305" parent="239" name="df_goods_image_sku_id_3d6eaf9ed60dfa41_fk_df_goods_sku_id">
       <ColNames>sku_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods_sku</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="305" parent="240" name="id">
+    <column id="306" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="240" name="create_time">
+    <column id="307" parent="240" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="240" name="update_time">
+    <column id="308" parent="240" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="240" name="is_delete">
+    <column id="309" parent="240" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="240" name="name">
+    <column id="310" parent="240" name="name">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="240" name="desc">
+    <column id="311" parent="240" name="brand">
       <Position>6</Position>
-      <DataType>varchar(256)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="311" parent="240" name="price">
-      <Position>7</Position>
-      <DataType>decimal(10,2 digit)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="312" parent="240" name="country">
-      <Position>8</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="313" parent="240" name="image">
-      <Position>9</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="240" name="stock">
-      <Position>10</Position>
-      <DataType>int(11)|0s</DataType>
+    <column id="312" parent="240" name="desc">
+      <Position>7</Position>
+      <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="240" name="sales">
+    <column id="313" parent="240" name="price">
+      <Position>8</Position>
+      <DataType>decimal(10,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="314" parent="240" name="country">
+      <Position>9</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="315" parent="240" name="image">
+      <Position>10</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="316" parent="240" name="stock">
       <Position>11</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="240" name="status">
+    <column id="317" parent="240" name="sales">
       <Position>12</Position>
-      <DataType>smallint(6)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="317" parent="240" name="goods_id">
-      <Position>13</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="240" name="type_id">
+    <column id="318" parent="240" name="status">
+      <Position>13</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="319" parent="240" name="goods_id">
       <Position>14</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="319" parent="240" name="df_goods_sku_goods_id_31622280_fk_df_goods_id">
+    <column id="320" parent="240" name="type_id">
+      <Position>15</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="321" parent="240" name="df_goods_sku_goods_id_406699015060497_fk_df_goods_id">
       <ColNames>goods_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="320" parent="240" name="df_goods_sku_type_id_576de3b4_fk_df_goods_type_id">
+    <index id="322" parent="240" name="df_goods_sku_94757cae">
       <ColNames>type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="321" parent="240" name="PRIMARY">
+    <key id="323" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="322" parent="240" name="df_goods_sku_goods_id_31622280_fk_df_goods_id">
+    <foreign-key id="324" parent="240" name="df_goods_sku_goods_id_406699015060497_fk_df_goods_id">
       <ColNames>goods_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="323" parent="240" name="df_goods_sku_type_id_576de3b4_fk_df_goods_type_id">
+    <foreign-key id="325" parent="240" name="df_goods_sku_type_id_62da815ffa731f83_fk_df_goods_type_id">
       <ColNames>type_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="324" parent="241" name="id">
+    <column id="326" parent="241" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="325" parent="241" name="create_time">
+    <column id="327" parent="241" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="326" parent="241" name="update_time">
+    <column id="328" parent="241" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="241" name="is_delete">
+    <column id="329" parent="241" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="241" name="name">
+    <column id="330" parent="241" name="name">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="241" name="logo">
+    <column id="331" parent="241" name="logo">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="330" parent="241" name="image">
+    <column id="332" parent="241" name="image">
       <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="331" parent="241" name="PRIMARY">
+    <key id="333" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="332" parent="242" name="id">
+    <column id="334" parent="242" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="242" name="create_time">
+    <column id="335" parent="242" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="242" name="update_time">
+    <column id="336" parent="242" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="242" name="is_delete">
+    <column id="337" parent="242" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="242" name="image">
+    <column id="338" parent="242" name="image">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="242" name="index">
+    <column id="339" parent="242" name="index">
       <Position>6</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="242" name="sku_id">
+    <column id="340" parent="242" name="sku_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="339" parent="242" name="df_index_banner_sku_id_57f2798e_fk_df_goods_sku_id">
+    <index id="341" parent="242" name="df_index_banner_sku_id_7a0cbd25ad27bf05_fk_df_goods_sku_id">
       <ColNames>sku_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="340" parent="242" name="PRIMARY">
+    <key id="342" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="341" parent="242" name="df_index_banner_sku_id_57f2798e_fk_df_goods_sku_id">
+    <foreign-key id="343" parent="242" name="df_index_banner_sku_id_7a0cbd25ad27bf05_fk_df_goods_sku_id">
       <ColNames>sku_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods_sku</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="342" parent="243" name="id">
+    <column id="344" parent="243" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="243" name="create_time">
+    <column id="345" parent="243" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="243" name="update_time">
+    <column id="346" parent="243" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="243" name="is_delete">
+    <column id="347" parent="243" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="243" name="name">
+    <column id="348" parent="243" name="name">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="243" name="url">
+    <column id="349" parent="243" name="url">
       <Position>6</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="243" name="image">
+    <column id="350" parent="243" name="image">
       <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="243" name="index">
+    <column id="351" parent="243" name="index">
       <Position>8</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="350" parent="243" name="PRIMARY">
+    <key id="352" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="351" parent="244" name="id">
+    <column id="353" parent="244" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="244" name="create_time">
+    <column id="354" parent="244" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="353" parent="244" name="update_time">
+    <column id="355" parent="244" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="244" name="is_delete">
+    <column id="356" parent="244" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="244" name="display_type">
+    <column id="357" parent="244" name="display_type">
       <Position>5</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="356" parent="244" name="index">
+    <column id="358" parent="244" name="index">
       <Position>6</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="357" parent="244" name="sku_id">
+    <column id="359" parent="244" name="sku_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="358" parent="244" name="type_id">
+    <column id="360" parent="244" name="type_id">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="359" parent="244" name="df_index_type_goods_sku_id_0a8a17db_fk_df_goods_sku_id">
+    <index id="361" parent="244" name="df_index_type_goods_sku_id_4917616aecdae46_fk_df_goods_sku_id">
       <ColNames>sku_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="360" parent="244" name="df_index_type_goods_type_id_35192ffd_fk_df_goods_type_id">
+    <index id="362" parent="244" name="df_index_type_goods_type_id_7d52ede37b12859d_fk_df_goods_type_id">
       <ColNames>type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="361" parent="244" name="PRIMARY">
+    <key id="363" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="362" parent="244" name="df_index_type_goods_sku_id_0a8a17db_fk_df_goods_sku_id">
+    <foreign-key id="364" parent="244" name="df_index_type_goods_sku_id_4917616aecdae46_fk_df_goods_sku_id">
       <ColNames>sku_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods_sku</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="363" parent="244" name="df_index_type_goods_type_id_35192ffd_fk_df_goods_type_id">
+    <foreign-key id="365" parent="244" name="df_index_type_goods_type_id_7d52ede37b12859d_fk_df_goods_type_id">
       <ColNames>type_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="364" parent="245" name="id">
+    <column id="366" parent="245" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="365" parent="245" name="create_time">
+    <column id="367" parent="245" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="366" parent="245" name="update_time">
+    <column id="368" parent="245" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="367" parent="245" name="is_delete">
+    <column id="369" parent="245" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="368" parent="245" name="count">
+    <column id="370" parent="245" name="count">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="369" parent="245" name="price">
+    <column id="371" parent="245" name="price">
       <Position>6</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="370" parent="245" name="comment">
+    <column id="372" parent="245" name="comment">
       <Position>7</Position>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="371" parent="245" name="order_id">
+    <column id="373" parent="245" name="order_id">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="372" parent="245" name="sku_id">
+    <column id="374" parent="245" name="sku_id">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="373" parent="245" name="df_order_goods_order_id_6958ee23_fk_df_order_info_id">
+    <index id="375" parent="245" name="df_order_goods_69dfcb07">
       <ColNames>order_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="374" parent="245" name="df_order_goods_sku_id_b7d6e04e_fk_df_goods_sku_id">
+    <index id="376" parent="245" name="df_order_goods_22ad5bca">
       <ColNames>sku_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="375" parent="245" name="PRIMARY">
+    <key id="377" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="376" parent="245" name="df_order_goods_order_id_6958ee23_fk_df_order_info_id">
+    <foreign-key id="378" parent="245" name="df_order_goods_order_id_4df5f023e6b21cfc_fk_df_order_info_id">
       <ColNames>order_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_order_info</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="377" parent="245" name="df_order_goods_sku_id_b7d6e04e_fk_df_goods_sku_id">
+    <foreign-key id="379" parent="245" name="df_order_goods_sku_id_158ffadca6e1cf23_fk_df_goods_sku_id">
       <ColNames>sku_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_goods_sku</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="378" parent="246" name="id">
+    <column id="380" parent="246" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="379" parent="246" name="create_time">
+    <column id="381" parent="246" name="create_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="380" parent="246" name="update_time">
+    <column id="382" parent="246" name="update_time">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="381" parent="246" name="is_delete">
+    <column id="383" parent="246" name="is_delete">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="382" parent="246" name="order_num">
+    <column id="384" parent="246" name="order_num">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="383" parent="246" name="pay_method">
+    <column id="385" parent="246" name="pay_method">
       <Position>6</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="384" parent="246" name="total_price">
+    <column id="386" parent="246" name="total_price">
       <Position>7</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="385" parent="246" name="transit_price">
+    <column id="387" parent="246" name="transit_price">
       <Position>8</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="386" parent="246" name="texes_price">
+    <column id="388" parent="246" name="texes_price">
       <Position>9</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="387" parent="246" name="order_status">
+    <column id="389" parent="246" name="order_status">
       <Position>10</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="388" parent="246" name="trade_no">
+    <column id="390" parent="246" name="trade_no">
       <Position>11</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="389" parent="246" name="addr_id">
+    <column id="391" parent="246" name="addr_id">
       <Position>12</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="390" parent="246" name="user_id">
+    <column id="392" parent="246" name="user_id">
       <Position>13</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="391" parent="246" name="df_order_info_addr_id_70c3726e_fk_df_address_id">
+    <index id="393" parent="246" name="df_order_info_90ccbf41">
       <ColNames>addr_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="392" parent="246" name="df_order_info_user_id_ac1e5bf5_fk_df_user_id">
+    <index id="394" parent="246" name="df_order_info_e8701ad4">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="393" parent="246" name="PRIMARY">
+    <key id="395" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="394" parent="246" name="df_order_info_addr_id_70c3726e_fk_df_address_id">
+    <foreign-key id="396" parent="246" name="df_order_info_addr_id_c19f3f7190b4c79_fk_df_address_id">
       <ColNames>addr_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_address</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="395" parent="246" name="df_order_info_user_id_ac1e5bf5_fk_df_user_id">
+    <foreign-key id="397" parent="246" name="df_order_info_user_id_406c2db98e93f54a_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="396" parent="247" name="id">
+    <column id="398" parent="247" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="397" parent="247" name="password">
+    <column id="399" parent="247" name="password">
       <Position>2</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="398" parent="247" name="last_login">
+    <column id="400" parent="247" name="last_login">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="399" parent="247" name="is_superuser">
+    <column id="401" parent="247" name="is_superuser">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="400" parent="247" name="username">
+    <column id="402" parent="247" name="username">
       <Position>5</Position>
-      <DataType>varchar(150)|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="401" parent="247" name="first_name">
+    <column id="403" parent="247" name="first_name">
       <Position>6</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="402" parent="247" name="last_name">
+    <column id="404" parent="247" name="last_name">
       <Position>7</Position>
-      <DataType>varchar(150)|0s</DataType>
+      <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="403" parent="247" name="email">
+    <column id="405" parent="247" name="email">
       <Position>8</Position>
       <DataType>varchar(254)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="404" parent="247" name="is_staff">
+    <column id="406" parent="247" name="is_staff">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="405" parent="247" name="is_active">
+    <column id="407" parent="247" name="is_active">
       <Position>10</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="406" parent="247" name="date_joined">
+    <column id="408" parent="247" name="date_joined">
       <Position>11</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="407" parent="247" name="create_time">
+    <column id="409" parent="247" name="create_time">
       <Position>12</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="408" parent="247" name="update_time">
+    <column id="410" parent="247" name="update_time">
       <Position>13</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="409" parent="247" name="is_delete">
+    <column id="411" parent="247" name="is_delete">
       <Position>14</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="410" parent="247" name="username">
+    <index id="412" parent="247" name="username">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="411" parent="247" name="PRIMARY">
+    <key id="413" parent="247" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="412" parent="247" name="username">
+    <key id="414" parent="247" name="username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <column id="413" parent="248" name="id">
+    <column id="415" parent="248" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="414" parent="248" name="user_id">
+    <column id="416" parent="248" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="415" parent="248" name="group_id">
+    <column id="417" parent="248" name="group_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="416" parent="248" name="df_user_groups_user_id_group_id_80e5ab91_uniq">
+    <index id="418" parent="248" name="user_id">
       <ColNames>user_id
 group_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="417" parent="248" name="df_user_groups_group_id_36f24e94_fk_auth_group_id">
+    <index id="419" parent="248" name="df_user_groups_group_id_83d6ecdaa280442_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="418" parent="248" name="PRIMARY">
+    <key id="420" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="419" parent="248" name="df_user_groups_user_id_group_id_80e5ab91_uniq">
+    <key id="421" parent="248" name="user_id">
       <ColNames>user_id
 group_id</ColNames>
-      <UnderlyingIndexName>df_user_groups_user_id_group_id_80e5ab91_uniq</UnderlyingIndexName>
+      <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="420" parent="248" name="df_user_groups_user_id_a816b098_fk_df_user_id">
+    <foreign-key id="422" parent="248" name="df_user_groups_user_id_34c008cec804c9ab_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="421" parent="248" name="df_user_groups_group_id_36f24e94_fk_auth_group_id">
+    <foreign-key id="423" parent="248" name="df_user_groups_group_id_83d6ecdaa280442_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>auth_group</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="422" parent="249" name="id">
+    <column id="424" parent="249" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="423" parent="249" name="user_id">
+    <column id="425" parent="249" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="424" parent="249" name="permission_id">
+    <column id="426" parent="249" name="permission_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="425" parent="249" name="df_user_user_permissions_user_id_permission_id_b22997de_uniq">
+    <index id="427" parent="249" name="user_id">
       <ColNames>user_id
 permission_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="426" parent="249" name="df_user_user_permiss_permission_id_40a6cb2d_fk_auth_perm">
+    <index id="428" parent="249" name="df_user_use_permission_id_16a4c62ae77fad3c_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="427" parent="249" name="PRIMARY">
+    <key id="429" parent="249" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="428" parent="249" name="df_user_user_permissions_user_id_permission_id_b22997de_uniq">
+    <key id="430" parent="249" name="user_id">
       <ColNames>user_id
 permission_id</ColNames>
-      <UnderlyingIndexName>df_user_user_permissions_user_id_permission_id_b22997de_uniq</UnderlyingIndexName>
+      <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="429" parent="249" name="df_user_user_permissions_user_id_b5f6551b_fk_df_user_id">
+    <foreign-key id="431" parent="249" name="df_user_user_permissions_user_id_49e89e3af2561cb1_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="430" parent="249" name="df_user_user_permiss_permission_id_40a6cb2d_fk_auth_perm">
+    <foreign-key id="432" parent="249" name="df_user_use_permission_id_16a4c62ae77fad3c_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>auth_permission</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="431" parent="250" name="id">
+    <column id="433" parent="250" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="432" parent="250" name="action_time">
+    <column id="434" parent="250" name="action_time">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="433" parent="250" name="object_id">
+    <column id="435" parent="250" name="object_id">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="434" parent="250" name="object_repr">
+    <column id="436" parent="250" name="object_repr">
       <Position>4</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="435" parent="250" name="action_flag">
+    <column id="437" parent="250" name="action_flag">
       <Position>5</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="436" parent="250" name="change_message">
+    <column id="438" parent="250" name="change_message">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="437" parent="250" name="content_type_id">
+    <column id="439" parent="250" name="content_type_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="438" parent="250" name="user_id">
+    <column id="440" parent="250" name="user_id">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="439" parent="250" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <index id="441" parent="250" name="djang_content_type_id_77dc6f41fa1ce0b1_fk_django_content_type_id">
       <ColNames>content_type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="440" parent="250" name="django_admin_log_user_id_c564eba6_fk_df_user_id">
+    <index id="442" parent="250" name="django_admin_log_user_id_1ccfd4cfd36b3bab_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="441" parent="250" name="PRIMARY">
+    <key id="443" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="442" parent="250" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <foreign-key id="444" parent="250" name="djang_content_type_id_77dc6f41fa1ce0b1_fk_django_content_type_id">
       <ColNames>content_type_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>django_content_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="443" parent="250" name="django_admin_log_user_id_c564eba6_fk_df_user_id">
+    <foreign-key id="445" parent="250" name="django_admin_log_user_id_1ccfd4cfd36b3bab_fk_df_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>feepop</RefSchemaName>
       <RefTableName>df_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="444" parent="251" name="id">
+    <column id="446" parent="251" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="445" parent="251" name="app_label">
+    <column id="447" parent="251" name="app_label">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="446" parent="251" name="model">
+    <column id="448" parent="251" name="model">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="447" parent="251" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <index id="449" parent="251" name="django_content_type_app_label_41e4371802f22892_uniq">
       <ColNames>app_label
 model</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="448" parent="251" name="PRIMARY">
+    <key id="450" parent="251" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="449" parent="251" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <key id="451" parent="251" name="django_content_type_app_label_41e4371802f22892_uniq">
       <ColNames>app_label
 model</ColNames>
-      <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
+      <UnderlyingIndexName>django_content_type_app_label_41e4371802f22892_uniq</UnderlyingIndexName>
     </key>
-    <column id="450" parent="252" name="id">
+    <column id="452" parent="252" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="451" parent="252" name="app">
+    <column id="453" parent="252" name="app">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="452" parent="252" name="name">
+    <column id="454" parent="252" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="453" parent="252" name="applied">
+    <column id="455" parent="252" name="applied">
       <Position>4</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="454" parent="252" name="PRIMARY">
+    <key id="456" parent="252" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="455" parent="253" name="session_key">
+    <column id="457" parent="253" name="session_key">
       <Position>1</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="456" parent="253" name="session_data">
+    <column id="458" parent="253" name="session_data">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="457" parent="253" name="expire_date">
+    <column id="459" parent="253" name="expire_date">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="458" parent="253" name="django_session_expire_date_a5c62663">
+    <index id="460" parent="253" name="django_session_de54fa62">
       <ColNames>expire_date</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="459" parent="253" name="PRIMARY">
+    <key id="461" parent="253" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>session_key</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="462" parent="254" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="463" parent="254" name="create_time">
+      <Position>2</Position>
+      <DataType>datetime(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="464" parent="254" name="update_time">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="465" parent="254" name="is_delete">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="466" parent="254" name="service_type">
+      <Position>5</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="467" parent="254" name="After_review">
+      <Position>6</Position>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="468" parent="254" name="picture">
+      <Position>7</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="469" parent="254" name="rel_order_id">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="470" parent="254" name="order_orderaftersales_0b5c11ac">
+      <ColNames>rel_order_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="471" parent="254" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="472" parent="254" name="order_orderaf_rel_order_id_6c97818a76a89ee9_fk_df_order_goods_id">
+      <ColNames>rel_order_id</ColNames>
+      <RefSchemaName>feepop</RefSchemaName>
+      <RefTableName>df_order_goods</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>
